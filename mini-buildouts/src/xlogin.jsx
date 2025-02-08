@@ -8,7 +8,7 @@ const Xlogin = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!username || !password) {
-      setMessage('Both fields are mandatory');
+      setMessage('Please fill out all fields');
     } else if (username === 'user' && password === 'password') {
       setMessage('Welcome, user!');
     } else {
@@ -18,6 +18,7 @@ const Xlogin = () => {
 
   return (
     <div>
+      <h1>Login Page</h1>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="username">Username</label>
@@ -26,6 +27,7 @@ const Xlogin = () => {
             id="username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
+            required
           />
         </div>
         <div>
@@ -35,6 +37,7 @@ const Xlogin = () => {
             id="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            required
           />
         </div>
         <button type="submit">Submit</button>
