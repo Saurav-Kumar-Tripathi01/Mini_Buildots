@@ -19,6 +19,7 @@ const Xlogin = () => {
   return (
     <div>
       <h1>Login Page</h1>
+      <p>{message && <p>{message}</p>}</p>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="username">Username</label>
@@ -42,7 +43,7 @@ const Xlogin = () => {
         </div>
         <button type="submit">Submit</button>
       </form>
-      {message && <p>{message}</p>}
+      
     </div>
   );
 };
