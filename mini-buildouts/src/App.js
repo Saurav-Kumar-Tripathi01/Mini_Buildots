@@ -1,12 +1,14 @@
 import './App.css';
-import Xlogin from './xlogin';
-import Xstopwatch from './xstopwatch';
+// import Xlogin from './xlogin';
+// import Xstopwatch from './xstopwatch';
+import Xweather from './Xweather/xweather';
 
 function App() {
   return (
     <div className="App">
       {/* <Xlogin /> */}
-      <Xstopwatch />
+      {/* <Xstopwatch /> */}
+      <Xweather />
     </div>
   );
 }
